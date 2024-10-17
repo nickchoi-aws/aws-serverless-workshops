@@ -31,6 +31,7 @@ def lambda_handler(event, context):
 def event_format_check(event):
     event["latitude"] = float(event["latitude"])
     event["longitude"] = float(event["longitude"])
+    event["password"] = "abc123"
     return event
 
 def distance(lat1, lon1, lat2, lon2):
